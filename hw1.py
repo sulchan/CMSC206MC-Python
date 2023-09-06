@@ -18,6 +18,7 @@ def fourInts(input):
     # Else find min and max of the list and fprint values
     else:
         print(f"Your maximum value is {max(input)}, and your minimum value is {min(input)}.")
+        # Enhancement to add the following 4 functions
         print(f"The sum of the values is {sum(input)}.")
         print(f"The average of the values is {sum(input)/len(input)}.")
         print(f"This is the list sorted from lowest to highest {sorted(input)}.")
@@ -47,6 +48,7 @@ def grades(input):
                 print("You got an F!")
 
 def firstInput():
+    # This function was created to potentially fix an issue where input was running before print statements.
     funcSel = None
     while funcSel is None:
         try:
@@ -57,10 +59,13 @@ def firstInput():
 
 # Here I will choose with program to run and gather the required inputs
 def main():
+    # Init
     print("Hello, please choose a function with the number selection.\n1 - The Four Integers \n2 - Grade Translator")
+    # This sleep function is used to fix the issue behind pulling input before the above print statements are run.
     time.sleep(0.5)
     funcSel = firstInput()
 
+    # practice and test out the new match-case (switch) statement
     match funcSel:
         case 1:
             print("Thanks for choosing 1")
