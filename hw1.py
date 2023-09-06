@@ -18,6 +18,10 @@ def fourInts(input):
     # Else find min and max of the list and fprint values
     else:
         print(f"Your maximum value is {max(input)}, and your minimum value is {min(input)}.")
+        print(f"The sum of the values is {sum(input)}.")
+        print(f"The average of the values is {sum(input)/len(input)}.")
+        print(f"This is the list sorted from lowest to highest {sorted(input)}.")
+        print(f"This is the list in reverse sort {sorted(input, reverse=True)}.")
 
 # This will be for program 2 - grades
 def grades(input):
